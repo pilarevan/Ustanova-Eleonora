@@ -1,1 +1,14 @@
-<p>article works!</p>
+<div class="article-page">
+  <section class="article-hero section-darker">
+    <div class="container">
+      <a routerLink="/novosti" class="article__back">← {{ 'news.title' | translate }}</a>
+      <h1>{{ slug }}</h1>
+    </div>
+  </section>
+
+  <section class="article-content section-light">
+    <div class="container">
+      <p style="opacity:0.5;font-style:italic">Article content loading...</p>
+    </div>
+  </section>
+</div>
