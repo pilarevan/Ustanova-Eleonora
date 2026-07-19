@@ -1,0 +1,28 @@
+<div class="gallery-page">
+  <section class="gallery-hero section-darker">
+    <div class="container">
+      <h1>{{ 'gallery.title' | translate }}</h1>
+    </div>
+  </section>
+
+  <section class="gallery-grid section-light">
+    <div class="container">
+      <div class="gallery-grid__inner">
+        <div
+          *ngFor="let img of images"
+          class="gallery-item"
+          [class.is-visible]="visibleIds.has(img.id)"
+          [attr.data-id]="img.id"
+          (click)="openLightbox(img)"
+        >
+          <img [src]="img.src" [alt]="'gallery.imageAlt' | translate" loading="lazy">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="gallery-lightbox" *ngIf="selectedImage" (click)="closeLightbox()">
+    <button class="gallery-lightbox__close" (click)="closeLightbox()">×</button>
+    <img [src]="selectedImage.src" [alt]="'gallery.imageAlt' | translate" (click)="$event.stopPropagation()">
+  </div>
+</div>
