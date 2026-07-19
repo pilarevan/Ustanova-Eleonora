@@ -71,6 +71,49 @@
     },
     "gdpr": "Ustanova za zdravstvenu njegu \"Eleonora\" has adapted all business conditions according to the new GDPR regulation. We collect and process data such as name, surname, and other contact information necessary for providing our services. For any additional questions, please contact us."
   },
+  "pages": {
+    "medicalTransport": {
+      "intro": "Medical patient transport across Croatia and all of Europe. 24 hours a day, 7 days a week.",
+      "text1": "We have years of experience since 2005, during which we have earned the trust of thousands of users across Europe. Our presence in most European cities and countries allows us to know the terrain perfectly and provide medical transport with top precision and experience.",
+      "text2": "Our goal is simple – to ensure you safe, comfortable and seamless transport, without any complications.",
+      "fleetTitle": "Our Fleet",
+      "fleetItem1": "40+ vehicles, including 14 ambulance vehicles",
+      "fleetItem2": "3 new vehicles (2025) with top comfort",
+      "fleetItem3": "Reduced vibration and noise",
+      "fleetItem4": "Safety sensors for seat belts",
+      "fleetItem5": "Air conditioning",
+      "ctaTitle": "Need medical transport?",
+      "ctaText": "Contact us — we are here for you 0-24.",
+      "ctaButton": "Contact us"
+    },
+    "homeHealthcare": {
+      "intro": "With 29 years of experience in home healthcare, we are your experienced helping hand.",
+      "text1": "Our home healthcare covers a wide range of services. Whether it's blood draws, blood pressure and glucose measurement, patient bathing or wound dressing, we are here to provide you with professional and attentive care in the comfort of your home.",
+      "text2": "Our team of dedicated medical professionals brings you safety and reliability in every situation.",
+      "servicesTitle": "Our Services",
+      "serviceItem1": "Blood draw",
+      "serviceItem2": "Blood pressure and glucose measurement",
+      "serviceItem3": "Patient bathing",
+      "serviceItem4": "Wound dressing",
+      "serviceItem5": "Individual care plan",
+      "ctaTitle": "Want to arrange care?",
+      "ctaText": "Contact us or consult with your doctor.",
+      "ctaButton": "Contact us"
+    },
+    "physicalTherapy": {
+      "intro": "Physical therapy at home allows you to recover and regain strength in the comfort of your own home.",
+      "text": "Our team of skilled physiotherapists tailors therapy to your individual needs, using advanced techniques and equipment. Regardless of your condition or injury, our goal is to improve your mobility, relieve pain, and help you return to your daily activities.",
+      "offerTitle": "What We Offer",
+      "offerItem1": "Individualized therapy program",
+      "offerItem2": "Advanced techniques and equipment",
+      "offerItem3": "Improved mobility",
+      "offerItem4": "Pain relief",
+      "offerItem5": "Therapy in the comfort of your home",
+      "ctaTitle": "Ready to start therapy?",
+      "ctaText": "Contact us and schedule an appointment.",
+      "ctaButton": "Contact us"
+    }
+  },
   "footer": {
     "rights": "© 2026 Ustanova za zdravstvenu njegu Eleonora. All rights reserved."
   }

@@ -71,6 +71,49 @@
     },
     "gdpr": "Ustanova za zdravstvenu njegu \"Eleonora\" je prilagodila sve uvjete poslovanja prema novoj Uredbi o GDPR-u. Od klijenata prikupljamo i obrađujemo podatke poput imena i prezimena te ostalih kontakt podataka neophodnih za provođenje naših usluga. Za sva dodatna pitanja slobodno nas kontaktirajte."
   },
+  "pages": {
+    "medicalTransport": {
+      "intro": "Medicinski prijevoz pacijenata diljem Hrvatske i cijele Europe. 24 sata dnevno, 7 dana u tjednu.",
+      "text1": "Iza nas stoji dugogodišnje iskustvo od 2005. godine, tijekom kojeg smo stekli povjerenje tisuća korisnika diljem Europe. Naša prisutnost u većini europskih gradova i država omogućava nam da izvrsno poznajemo teren i pružimo medicinski prijevoz s vrhunskom preciznošću i iskustvom.",
+      "text2": "Naš cilj je jednostavan – osigurati vam siguran, udoban i besprijekoran prijevoz, bez ikakvih komplikacija.",
+      "fleetTitle": "Naš vozni park",
+      "fleetItem1": "40+ vozila, od čega 14 sanitetskih vozila",
+      "fleetItem2": "3 nova vozila (2025) s vrhunskom udobnošću",
+      "fleetItem3": "Smanjenje vibracija i buke",
+      "fleetItem4": "Sigurnosni senzori za pojaseve",
+      "fleetItem5": "Klimatizacija",
+      "ctaTitle": "Treba vam medicinski prijevoz?",
+      "ctaText": "Kontaktirajte nas — tu smo za vas 0-24.",
+      "ctaButton": "Kontaktirajte nas"
+    },
+    "homeHealthcare": {
+      "intro": "Sa stazom dugom 29 godina u zdravstvenoj njezi u kući, mi smo vaša iskusna ruka podrške.",
+      "text1": "Naša kućna medicinska njega obuhvaća širok raspon usluga. Bilo da je riječ o vađenju krvi, mjerenju tlaka i šećera, kupanju pacijenata ili previjanju rana, mi smo tu kako bismo vam pružili stručnu i pažljivu njegu u udobnosti vašeg doma.",
+      "text2": "Naš tim posvećenih medicinskih stručnjaka donosi vam sigurnost i pouzdanost u svakoj situaciji.",
+      "servicesTitle": "Naše usluge",
+      "serviceItem1": "Vađenje krvi",
+      "serviceItem2": "Mjerenje tlaka i šećera",
+      "serviceItem3": "Kupanje pacijenata",
+      "serviceItem4": "Previjanje rana",
+      "serviceItem5": "Individualni plan skrbi",
+      "ctaTitle": "Želite dogovoriti njegu?",
+      "ctaText": "Kontaktirajte nas ili se posavjetujte s vašim liječnikom.",
+      "ctaButton": "Kontaktirajte nas"
+    },
+    "physicalTherapy": {
+      "intro": "Fizikalna terapija u kući omogućuje vam da se oporavljate i obnavljate snagu uz udobnost svog doma.",
+      "text": "Naš tim stručnih fizioterapeuta prilagođava terapiju vašim individualnim potrebama, koristeći napredne tehnike i opremu. Bez obzira na vaše stanje ili ozljedu, naš cilj je poboljšati vašu pokretljivost, ublažiti bol i pomoći vam da se vratite svojim svakodnevnim aktivnostima.",
+      "offerTitle": "Što nudimo",
+      "offerItem1": "Individualizirani program terapije",
+      "offerItem2": "Napredne tehnike i oprema",
+      "offerItem3": "Poboljšanje pokretljivosti",
+      "offerItem4": "Ublažavanje boli",
+      "offerItem5": "Terapija u udobnosti vašeg doma",
+      "ctaTitle": "Spremni za početak terapije?",
+      "ctaText": "Kontaktirajte nas i dogovorite termin.",
+      "ctaButton": "Kontaktirajte nas"
+    }
+  },
   "footer": {
     "rights": "© 2026 Ustanova za zdravstvenu njegu Eleonora. Sva prava pridržana."
   }

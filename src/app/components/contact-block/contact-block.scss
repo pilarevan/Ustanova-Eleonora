@@ -28,10 +28,10 @@
     }
   }
 
-  &__hours {
-    font-size: 0.8rem !important;
-    opacity: 0.6 !important;
-    margin-bottom: 0.75rem !important;
+  &__item &__hours {
+    font-size: 0.8rem;
+    opacity: 0.6;
+    margin-bottom: 0.75rem;
   }
 
   &__addresses {

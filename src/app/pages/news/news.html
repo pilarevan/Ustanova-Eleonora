@@ -8,11 +8,13 @@
   <section class="news-list section-light">
     <div class="container">
       <div class="news-list__grid">
-        <article class="news-item" *ngFor="let item of news">
+        @for (item of news; track item.slug) {
+        <article class="news-item">
           <span class="news-item__date">{{ item.date }}</span>
           <h2 class="news-item__title">{{ item.title }}</h2>
           <a [routerLink]="['/novosti', item.slug]" class="news-item__link">{{ 'news.readMore' | translate }} →</a>
         </article>
+        }
       </div>
     </div>
   </section>

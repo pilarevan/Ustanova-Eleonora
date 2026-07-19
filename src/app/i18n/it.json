@@ -71,6 +71,49 @@
     },
     "gdpr": "Ustanova za zdravstvenu njegu \"Eleonora\" ha adattato tutte le condizioni aziendali secondo il nuovo Regolamento GDPR. Raccogliamo ed elaboriamo dati come nome, cognome e altre informazioni di contatto necessarie per fornire i nostri servizi. Per qualsiasi domanda aggiuntiva, contattateci."
   },
+  "pages": {
+    "medicalTransport": {
+      "intro": "Trasporto medico pazienti in tutta la Croazia e in tutta Europa. 24 ore al giorno, 7 giorni su 7.",
+      "text1": "Abbiamo un'esperienza pluriennale dal 2005, durante la quale abbiamo guadagnato la fiducia di migliaia di utenti in tutta Europa. La nostra presenza nella maggior parte delle città e degli stati europei ci consente di conoscere perfettamente il territorio e fornire trasporto medico con massima precisione ed esperienza.",
+      "text2": "Il nostro obiettivo è semplice – garantirvi un trasporto sicuro, confortevole e senza intoppi, senza complicazioni.",
+      "fleetTitle": "La Nostra Flotta",
+      "fleetItem1": "40+ veicoli, di cui 14 ambulanze",
+      "fleetItem2": "3 nuovi veicoli (2025) con massimo comfort",
+      "fleetItem3": "Riduzione vibrazioni e rumore",
+      "fleetItem4": "Sensori di sicurezza per cinture",
+      "fleetItem5": "Aria condizionata",
+      "ctaTitle": "Necessita di trasporto medico?",
+      "ctaText": "Contattateci — siamo qui per voi 0-24.",
+      "ctaButton": "Contattateci"
+    },
+    "homeHealthcare": {
+      "intro": "Con 29 anni di esperienza nell'assistenza sanitaria domiciliare, siamo la vostra mano esperta di supporto.",
+      "text1": "La nostra assistenza domiciliare copre un'ampia gamma di servizi. Che si tratti di prelievi di sangue, misurazione della pressione e glicemia, bagno dei pazienti o medicazione delle ferite, siamo qui per offrirvi un'assistenza professionale e attenta nella comodità della vostra casa.",
+      "text2": "Il nostro team di professionisti medici dedicati vi offre sicurezza e affidabilità in ogni situazione.",
+      "servicesTitle": "I Nostri Servizi",
+      "serviceItem1": "Prelievo di sangue",
+      "serviceItem2": "Misurazione pressione e glicemia",
+      "serviceItem3": "Bagno dei pazienti",
+      "serviceItem4": "Medicazione delle ferite",
+      "serviceItem5": "Piano di cura individuale",
+      "ctaTitle": "Volete organizzare l'assistenza?",
+      "ctaText": "Contattateci o consultate il vostro medico.",
+      "ctaButton": "Contattateci"
+    },
+    "physicalTherapy": {
+      "intro": "La fisioterapia a domicilio vi permette di recuperare e ritrovare le forze nella comodità della vostra casa.",
+      "text": "Il nostro team di fisioterapisti esperti adatta la terapia alle vostre esigenze individuali, utilizzando tecniche e attrezzature avanzate. Indipendentemente dalla vostra condizione o infortunio, il nostro obiettivo è migliorare la mobilità, alleviare il dolore e aiutarvi a tornare alle vostre attività quotidiane.",
+      "offerTitle": "Cosa Offriamo",
+      "offerItem1": "Programma terapeutico personalizzato",
+      "offerItem2": "Tecniche e attrezzature avanzate",
+      "offerItem3": "Miglioramento della mobilità",
+      "offerItem4": "Sollievo dal dolore",
+      "offerItem5": "Terapia nella comodità di casa vostra",
+      "ctaTitle": "Pronti per iniziare la terapia?",
+      "ctaText": "Contattateci e fissate un appuntamento.",
+      "ctaButton": "Contattateci"
+    }
+  },
   "footer": {
     "rights": "© 2026 Ustanova za zdravstvenu njegu Eleonora. Tutti i diritti riservati."
   }

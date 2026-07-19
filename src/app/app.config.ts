@@ -11,7 +11,7 @@ export const appConfig: ApplicationConfig = {
     provideRouter(routes),
     provideHttpClient(),
     provideTranslateService({
-      lang: 'hr'
+      lang: localStorage.getItem('lang') || 'hr'
     }),
     provideTranslateHttpLoader({
       prefix: './i18n/',

@@ -13,11 +13,12 @@
       <a routerLink="/" fragment="contact">{{ 'nav.contact' | translate }}</a>
 
       <div class="header__lang">
-        <button *ngFor="let lang of languages"
-                [class.active]="currentLang === lang"
-                (click)="switchLang(lang)">
-          {{ lang | uppercase }}
-        </button>
+        @for (lang of languages; track lang) {
+          <button [class.active]="currentLang === lang"
+                  (click)="switchLang(lang)">
+            {{ lang | uppercase }}
+          </button>
+        }
       </div>
     </nav>
 

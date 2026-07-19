@@ -1,12 +1,11 @@
 import { Component, Input } from '@angular/core';
 import { RouterModule } from '@angular/router';
 import { TranslatePipe } from '@ngx-translate/core';
-import { CommonModule } from '@angular/common';
 
 @Component({
   selector: 'app-service-card',
   standalone: true,
-  imports: [RouterModule, TranslatePipe, CommonModule],
+  imports: [RouterModule, TranslatePipe],
   templateUrl: './service-card.html',
   styleUrl: './service-card.scss'
 })
@@ -16,4 +15,5 @@ export class ServiceCard {
   @Input() link = '';
   @Input() imageUrl = '';
   @Input() index = 0;
+  @Input() exploreKey = '';
 }

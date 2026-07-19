@@ -1,7 +1,6 @@
 import { Component } from '@angular/core';
 import { RouterModule } from '@angular/router';
 import { TranslatePipe } from '@ngx-translate/core';
-import { CommonModule } from '@angular/common';
 
 interface NewsItem {
   title: string;
@@ -13,7 +12,7 @@ interface NewsItem {
 @Component({
   selector: 'app-news-preview',
   standalone: true,
-  imports: [RouterModule, TranslatePipe, CommonModule],
+  imports: [RouterModule, TranslatePipe],
   templateUrl: './news-preview.html',
   styleUrl: './news-preview.scss'
 })

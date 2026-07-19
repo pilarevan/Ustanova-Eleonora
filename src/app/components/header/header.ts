@@ -1,12 +1,12 @@
 import { Component, HostListener } from '@angular/core';
-import { CommonModule } from '@angular/common';
+import { UpperCasePipe } from '@angular/common';
 import { RouterModule } from '@angular/router';
 import { TranslatePipe, TranslateService } from '@ngx-translate/core';
 
 @Component({
   selector: 'app-header',
   standalone: true,
-  imports: [CommonModule, RouterModule, TranslatePipe],
+  imports: [UpperCasePipe, RouterModule, TranslatePipe],
   templateUrl: './header.html',
   styleUrl: './header.scss'
 })
@@ -28,6 +28,7 @@ export class Header {
 
   switchLang(lang: string) {
     this.translate.use(lang);
+    localStorage.setItem('lang', lang);
   }
 
   toggleMenu() {
