@@ -1,1 +1,0 @@
-import {p,X as Xd,i as xo}from'./main-AQLPH3VJ.js';var m=class e{translate=p(Xd);transform(t){if(!t)return "";let[r,s,o]=t.split("-"),p=String(Number(s)),f=this.translate.instant(`months.${p}`);return `${Number(o)} ${f} ${r}`}static \u0275fac=function(r){return new(r||e)};static \u0275pipe=xo({name:"formatDate",type:e,pure:true})};export{m};

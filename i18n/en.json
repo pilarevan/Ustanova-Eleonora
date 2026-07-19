@@ -5,7 +5,12 @@
     "healthcare": "HOME HEALTHCARE",
     "physiotherapy": "PHYSICAL THERAPY",
     "news": "NEWS",
+    "gallery": "GALLERY",
     "contact": "CONTACT"
+  },
+  "gallery": {
+    "title": "Gallery",
+    "imageAlt": "Gallery image"
   },
   "months": {
     "1": "January",
