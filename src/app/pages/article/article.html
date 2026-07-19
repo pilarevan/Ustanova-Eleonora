@@ -2,6 +2,9 @@
   <section class="article-hero section-darker">
     <div class="container">
       <a routerLink="/novosti" class="article__back">← {{ 'news.title' | translate }}</a>
+      @if (image) {
+      <img [src]="image" alt="title" class="article__image">
+      }
       <h1>{{ title }}</h1>
       @if (date) {
         <p class="article__date" style="opacity:0.6;margin-top:0.5rem">{{ date | formatDate }}</p>

@@ -22,17 +22,20 @@ export class NewsPreview {
     {
       title: 'Ustanova Eleonora: Nova vozila, novi standardi u medicinskom prijevozu',
       date: '2025-06-09',
-      slug: 'ustanova-eleonora-nova-vozila-novi-standardi-u-medicinskom-prijevozu'
+      slug: 'ustanova-eleonora-nova-vozila-novi-standardi-u-medicinskom-prijevozu',
+      image: 'assets/images/news-1.jpg'
     },
     {
       title: 'Team-Building Together',
       date: '2025-11-15',
-      slug: 'team-building-together'
+      slug: 'team-building-together',
+      image: 'assets/images/news-2.jpg'
     },
     {
       title: 'A Special Visit for Our 29th Anniversary',
       date: '2025-12-13',
-      slug: '29th-anniversary-special-visit'
+      slug: '29th-anniversary-special-visit',
+      image: 'assets/images/news-3.jpg'
     }
   ];
 }

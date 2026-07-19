@@ -10,6 +10,9 @@
       <div class="news-list__grid">
         @for (item of news; track item.slug) {
         <article class="news-item">
+          @if (item.image) {
+          <img [src]="item.image" [alt]="item.title" class="news-item__image">
+          }
           <span class="news-item__date">{{ item.date | formatDate }}</span>
           <h2 class="news-item__title">{{ item.title }}</h2>
           <a [routerLink]="['/novosti', item.slug]" class="news-item__link">{{ 'news.readMore' | translate }} →</a>
