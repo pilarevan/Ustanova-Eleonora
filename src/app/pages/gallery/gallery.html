@@ -15,7 +15,7 @@
           [attr.data-id]="img.id"
           (click)="openLightbox(img)"
         >
-          <img [src]="img.src" [alt]="'gallery.imageAlt' | translate" loading="lazy">
+          <img [src]="img.src" alt="" loading="lazy">
         </div>
       </div>
     </div>
@@ -23,6 +23,6 @@
 
   <div class="gallery-lightbox" *ngIf="selectedImage" (click)="closeLightbox()">
     <button class="gallery-lightbox__close" (click)="closeLightbox()">×</button>
-    <img [src]="selectedImage.src" [alt]="'gallery.imageAlt' | translate" (click)="$event.stopPropagation()">
+    <img [src]="selectedImage.src" alt="" (click)="$event.stopPropagation()">
   </div>
 </div>

@@ -1,4 +1,4 @@
-import { Component, HostListener, AfterViewInit } from '@angular/core';
+import { Component, HostListener, AfterViewInit, OnDestroy } from '@angular/core';
 import { NgFor, NgIf } from '@angular/common';
 import { TranslatePipe } from '@ngx-translate/core';
 
@@ -14,12 +14,15 @@ interface GalleryImage {
   templateUrl: './gallery.html',
   styleUrl: './gallery.scss'
 })
-export class Gallery implements AfterViewInit {
+export class Gallery implements AfterViewInit, OnDestroy {
   images: GalleryImage[] = [];
 
   selectedImage: GalleryImage | null = null;
 
   visibleIds = new Set<number>();
+
+  private observer: IntersectionObserver | null = null;
+  private observerTimer: ReturnType<typeof setTimeout> | null = null;
 
   constructor() {
     for (let i = 1; i <= 53; i++) {
@@ -31,8 +34,13 @@ export class Gallery implements AfterViewInit {
     this.setupObserver();
   }
 
+  ngOnDestroy() {
+    this.observer?.disconnect();
+    if (this.observerTimer) clearTimeout(this.observerTimer);
+  }
+
   private setupObserver() {
-    const observer = new IntersectionObserver((entries) => {
+    this.observer = new IntersectionObserver((entries) => {
       for (const entry of entries) {
         const id = Number(entry.target.getAttribute('data-id'));
         if (entry.isIntersecting) {
@@ -41,9 +49,9 @@ export class Gallery implements AfterViewInit {
       }
     }, { rootMargin: '100px' });
 
-    setTimeout(() => {
+    this.observerTimer = setTimeout(() => {
       const items = document.querySelectorAll('.gallery-item');
-      items.forEach(el => observer.observe(el));
+      items.forEach(el => this.observer?.observe(el));
     });
   }
 
