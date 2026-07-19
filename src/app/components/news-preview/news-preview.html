@@ -4,7 +4,7 @@
     <div class="news-preview__grid">
       @for (item of news; track item.slug) {
         <article class="news-card">
-        <div class="news-card__date">{{ item.date }}</div>
+        <div class="news-card__date">{{ item.date | formatDate }}</div>
         <h3 class="news-card__title">{{ item.title }}</h3>
         <a [routerLink]="['/novosti', item.slug]" class="news-card__link">{{ 'news.readMore' | translate }} →</a>
       </article>
