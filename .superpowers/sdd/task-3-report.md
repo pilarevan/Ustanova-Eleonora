@@ -1,14 +1,13 @@
-# Task 3 Report
+# Task 3: Create FormatDatePipe — Report
 
 **Status:** DONE
 
-## Commits
-- `400842e` — feat: add Header component with nav and language switcher
+**Commits:**
+- `2ad7609` feat: add FormatDatePipe for translated dates
 
-## Test Summary
-`npx ng build` passes successfully (only pre-existing Sass deprecation warning).
+**Test/Build Summary:**
+- Created `src/app/pipes/format-date.pipe.ts` (19 lines)
+- `npx tsc --noEmit` — passed with no errors
+- Single commit as specified in the brief
 
-## Concerns
-- `@ngx-translate/core` v18 has no `TranslateModule` — used standalone `TranslatePipe` instead.
-- `currentLang` returns a `Signal` in v18; called as `this.translate.currentLang()` in the getter.
-- Component files use CLI-generated names (`header.ts`/`.html`/`.scss`), not the `header.component.*` convention from the brief.
+**Report file:** `.superpowers/sdd/task-3-report.md`

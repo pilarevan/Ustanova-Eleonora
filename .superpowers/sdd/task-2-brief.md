@@ -1,163 +1,94 @@
-### Task 2: Install i18n + Set Up Translation Files
+### Task 2: Add month name translations to all 4 language files
 
 **Files:**
-- Create: `src/app/i18n/hr.json`
-- Create: `src/app/i18n/en.json`
-- Create: `src/app/i18n/it.json`
-- Create: `src/app/i18n/de.json`
-- Modify: `src/app/app.config.ts`
+- Modify: `public/i18n/hr.json`
+- Modify: `public/i18n/en.json`
+- Modify: `public/i18n/it.json`
+- Modify: `public/i18n/de.json`
 
-**Interfaces:**
-- Consumes: nothing
-- Produces: `TranslateService` available app-wide with 4 language files loaded
+- [ ] **Add months block to hr.json**
 
-- [ ] **Step 1: Install @ngx-translate dependencies**
-
-```bash
-cd C:\Users\Pozitron\Antigravity\reimagined-palm-tree
-npm install @ngx-translate/core @ngx-translate/http-loader
-```
-
-- [ ] **Step 2: Create translation files**
-
-Create `src/app/i18n/hr.json`:
+Insert a `months` object with keys `1` through `12` after the `nav` block:
 
 ```json
-{
-  "nav": {
-    "about": "O NAMA",
-    "transport": "SANITETSKI PRIJEVOZ",
-    "healthcare": "ZDRAVSTVENA NJEGA",
-    "physiotherapy": "FIZIKALNA TERAPIJA",
-    "news": "NOVOSTI",
-    "contact": "KONTAKT"
-  },
-  "hero": {
-    "tagline": "Medicinski prijevoz diljem Europe — sa srcem.",
-    "subtitle": "Profesionalna zdravstvena njega i prijevoz s punom pažnjom prema vašim potrebama.",
-    "cta": "Saznajte više"
-  },
-  "services": {
-    "transport": {
-      "title": "Sanitetski prijevoz",
-      "description": "Medicinski prijevoz pacijenata diljem Hrvatske i Europe. 24/7, sigurno i pouzdano.",
-      "explore": "Istraži →"
-    },
-    "healthcare": {
-      "title": "Zdravstvena njega u kući",
-      "description": "Kvalitetna zdravstvena njega u udobnosti vašeg doma. Naš tim stručnjaka posvećen je vašem blagostanju.",
-      "explore": "Istraži →"
-    },
-    "physiotherapy": {
-      "title": "Fizikalna terapija u kući",
-      "description": "Individualizirana fizikalna terapija u vašem domu za brži oporavak i bolju pokretljivost.",
-      "explore": "Istraži →"
-    }
-  },
-  "stats": {
-    "years": "29+ godina iskustva",
-    "employees": "40+ djelatnika",
-    "vehicles": "40+ vozila",
-    "patients": "9000+ pacijenata godišnje"
-  },
-  "news": {
-    "title": "Novosti",
-    "readMore": "Pročitaj više"
-  },
-  "contact": {
-    "title": "Kontakt",
-    "healthcare": {
-      "title": "Zdravstvena njega",
-      "hours": "Pon-Pet 07:00-15:00",
-      "phone": "00385 52 451221",
-      "email": "eleonora.nalozi@gmail.com"
-    },
-    "transport": {
-      "title": "Sanitetski prijevoz",
-      "hours": "Svaki dan 0-24",
-      "phone": "00385 91 451 2211",
-      "email": "ustanova.eleonora@gmail.com"
-    },
-    "physiotherapy": {
-      "title": "Fizikalna terapija",
-      "hours": "Pon-Pet 07:00-15:00",
-      "phone": "00385 52 434 435",
-      "email": "eleonorafizikalna@gmail.com"
-    },
-    "accounting": {
-      "title": "Računovodstvo",
-      "hours": "Pon-Pet 07:00-15:00",
-      "phone": "00385 52 451 221",
-      "email": "racunovodstvo.eleonora@gmail.com"
-    },
-    "address": {
-      "line1": "Mauro Gioseffi 2, Poreč 52440",
-      "line2": "Antonci 25a, Nova Vas 52446"
-    },
-    "gdpr": "Ustanova za zdravstvenu njegu \"Eleonora\" je prilagodila sve uvjete poslovanja prema novoj Uredbi o GDPR-u. Od klijenata prikupljamo i obrađujemo podatke poput imena i prezimena te ostalih kontakt podataka neophodnih za provođenje naših usluga. Za sva dodatna pitanja slobodno nas kontaktirajte."
-  },
-  "footer": {
-    "rights": "© 2026 Ustanova za zdravstvenu njegu Eleonora. Sva prava pridržana."
-  }
+"months": {
+  "1": "Siječanj",
+  "2": "Veljača",
+  "3": "Ožujak",
+  "4": "Travanj",
+  "5": "Svibanj",
+  "6": "Lipanj",
+  "7": "Srpanj",
+  "8": "Kolovoz",
+  "9": "Rujan",
+  "10": "Listopad",
+  "11": "Studeni",
+  "12": "Prosinac"
 }
 ```
 
-Copy the same structure for `en.json`, `it.json`, `de.json` with translated values.
-
-- [ ] **Step 3: Configure TranslateModule in app.config.ts**
-
-Modify `src/app/app.config.ts`:
-
-```typescript
-import { ApplicationConfig, importProvidersFrom } from '@angular/core';
-import { provideRouter } from '@angular/router';
-import { HttpClientModule, HttpClient } from '@angular/common/http';
-import { TranslateModule, TranslateLoader } from '@ngx-translate/core';
-import { TranslateHttpLoader } from '@ngx-translate/http-loader';
-import { routes } from './app.routes';
-
-export function HttpLoaderFactory(http: HttpClient) {
-  return new TranslateHttpLoader(http, './i18n/', '.json');
-}
-
-export const appConfig: ApplicationConfig = {
-  providers: [
-    provideRouter(routes),
-    importProvidersFrom(HttpClientModule),
-    importProvidersFrom(
-      TranslateModule.forRoot({
-        loader: {
-          provide: TranslateLoader,
-          useFactory: HttpLoaderFactory,
-          deps: [HttpClient]
-        },
-        defaultLanguage: 'hr'
-      })
-    )
-  ]
-};
-```
-
-Add to `angular.json` under `assets` to include i18n folder:
+- [ ] **Add months block to en.json**
 
 ```json
-"assets": [
-  "src/favicon.ico",
-  "src/assets",
-  "src/app/i18n"
-]
+"months": {
+  "1": "January",
+  "2": "February",
+  "3": "March",
+  "4": "April",
+  "5": "May",
+  "6": "June",
+  "7": "July",
+  "8": "August",
+  "9": "September",
+  "10": "October",
+  "11": "November",
+  "12": "December"
+}
 ```
 
-- [ ] **Step 4: Verify build**
+- [ ] **Add months block to it.json**
+
+```json
+"months": {
+  "1": "Gennaio",
+  "2": "Febbraio",
+  "3": "Marzo",
+  "4": "Aprile",
+  "5": "Maggio",
+  "6": "Giugno",
+  "7": "Luglio",
+  "8": "Agosto",
+  "9": "Settembre",
+  "10": "Ottobre",
+  "11": "Novembre",
+  "12": "Dicembre"
+}
+```
+
+- [ ] **Add months block to de.json**
+
+```json
+"months": {
+  "1": "Januar",
+  "2": "Februar",
+  "3": "März",
+  "4": "April",
+  "5": "Mai",
+  "6": "Juni",
+  "7": "Juli",
+  "8": "August",
+  "9": "September",
+  "10": "Oktober",
+  "11": "November",
+  "12": "Dezember"
+}
+```
+
+- [ ] **Commit**
 
 ```bash
-npx ng build
-# Should succeed with no errors
+git add public/i18n/
+git commit -m "feat: add month name translations for all 4 languages"
 ```
 
-- [ ] **Step 5: Commit**
-
-```bash
-git add -A
-git commit -m "feat: add i18n with @ngx-translate and 4 language files"
-```
+---
