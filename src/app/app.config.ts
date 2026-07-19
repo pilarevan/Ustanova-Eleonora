@@ -14,7 +14,7 @@ export const appConfig: ApplicationConfig = {
       lang: localStorage.getItem('lang') || 'hr'
     }),
     provideTranslateHttpLoader({
-      prefix: './i18n/',
+      prefix: '/i18n/',
       suffix: '.json'
     })
   ]

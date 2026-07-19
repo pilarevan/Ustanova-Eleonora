@@ -1,0 +1,120 @@
+{
+  "nav": {
+    "about": "ÜBER UNS",
+    "transport": "KRANKENTRANSPORT",
+    "healthcare": "HAUSKRANKENPFLEGE",
+    "physiotherapy": "PHYSIOTHERAPIE",
+    "news": "NEUIGKEITEN",
+    "contact": "KONTAKT"
+  },
+  "hero": {
+    "tagline": "Medizinischer Transport durch Europa — mit Herz.",
+    "subtitle": "Professionelle Gesundheitsversorgung und Transport mit voller Aufmerksamkeit für Ihre Bedürfnisse.",
+    "cta": "Mehr erfahren"
+  },
+  "services": {
+    "transport": {
+      "title": "Krankentransport",
+      "description": "Patiententransport in Kroatien und Europa. 24/7, sicher und zuverlässig.",
+      "explore": "Entdecken →"
+    },
+    "healthcare": {
+      "title": "Hauskrankenpflege",
+      "description": "Qualitativ hochwertige Gesundheitsversorgung in Ihrem Zuhause. Unser Team widmet sich Ihrem Wohlbefinden.",
+      "explore": "Entdecken →"
+    },
+    "physiotherapy": {
+      "title": "Physiotherapie zu Hause",
+      "description": "Individuelle Physiotherapie zu Hause für schnellere Genesung und bessere Mobilität.",
+      "explore": "Entdecken →"
+    }
+  },
+  "stats": {
+    "years": "29+ Jahre Erfahrung",
+    "employees": "40+ Mitarbeiter",
+    "vehicles": "40+ Fahrzeuge",
+    "patients": "9000+ Patienten jährlich"
+  },
+  "news": {
+    "title": "Neuigkeiten",
+    "readMore": "Mehr lesen"
+  },
+  "contact": {
+    "title": "Kontakt",
+    "healthcare": {
+      "title": "Gesundheitspflege",
+      "hours": "Mo-Fr 07:00-15:00",
+      "phone": "00385 52 451221",
+      "email": "eleonora.nalozi@gmail.com"
+    },
+    "transport": {
+      "title": "Krankentransport",
+      "hours": "Täglich 0-24",
+      "phone": "00385 91 451 2211",
+      "email": "ustanova.eleonora@gmail.com"
+    },
+    "physiotherapy": {
+      "title": "Physiotherapie",
+      "hours": "Mo-Fr 07:00-15:00",
+      "phone": "00385 52 434 435",
+      "email": "eleonorafizikalna@gmail.com"
+    },
+    "accounting": {
+      "title": "Buchhaltung",
+      "hours": "Mo-Fr 07:00-15:00",
+      "phone": "00385 52 451 221",
+      "email": "racunovodstvo.eleonora@gmail.com"
+    },
+    "address": {
+      "line1": "Mauro Gioseffi 2, Poreč 52440",
+      "line2": "Antonci 25a, Nova Vas 52446"
+    },
+    "gdpr": "Die Ustanova za zdravstvenu njegu \"Eleonora\" hat alle Geschäftsbedingungen gemäß der neuen DSGVO-Verordnung angepasst. Wir sammeln und verarbeiten Daten wie Namen, Vornamen und andere Kontaktinformationen, die für die Erbringung unserer Dienstleistungen erforderlich sind. Bei weiteren Fragen kontaktieren Sie uns bitte."
+  },
+  "pages": {
+    "medicalTransport": {
+      "intro": "Medizinischer Patiententransport in ganz Kroatien und ganz Europa. 24 Stunden am Tag, 7 Tage die Woche.",
+      "text1": "Wir verfügen über langjährige Erfahrung seit 2005, in der wir das Vertrauen von tausenden Nutzern in ganz Europa gewonnen haben. Unsere Präsenz in den meisten europäischen Städten und Ländern ermöglicht es uns, das Gelände perfekt zu kennen und medizinische Transporte mit höchster Präzision und Erfahrung durchzuführen.",
+      "text2": "Unser Ziel ist einfach – Ihnen einen sicheren, komfortablen und reibungslosen Transport ohne Komplikationen zu gewährleisten.",
+      "fleetTitle": "Unsere Flotte",
+      "fleetItem1": "40+ Fahrzeuge, darunter 14 Krankenwagen",
+      "fleetItem2": "3 neue Fahrzeuge (2025) mit höchstem Komfort",
+      "fleetItem3": "Reduzierte Vibrationen und Geräusche",
+      "fleetItem4": "Sicherheitssensoren für Gurte",
+      "fleetItem5": "Klimaanlage",
+      "ctaTitle": "Brauchen Sie einen Krankentransport?",
+      "ctaText": "Kontaktieren Sie uns — wir sind 0-24 für Sie da.",
+      "ctaButton": "Kontaktieren Sie uns"
+    },
+    "homeHealthcare": {
+      "intro": "Mit 29 Jahren Erfahrung in der häuslichen Krankenpflege sind wir Ihre erfahrene Stütze.",
+      "text1": "Unsere häusliche Krankenpflege umfasst ein breites Spektrum an Dienstleistungen. Ob Blutabnahme, Blutdruck- und Blutzuckermessung, Patientenbad oder Wundversorgung – wir sind hier, um Ihnen professionelle und fürsorgliche Pflege in den eigenen vier Wänden zu bieten.",
+      "text2": "Unser Team engagierter medizinischer Fachkräfte bietet Ihnen Sicherheit und Zuverlässigkeit in jeder Situation.",
+      "servicesTitle": "Unsere Leistungen",
+      "serviceItem1": "Blutabnahme",
+      "serviceItem2": "Blutdruck- und Blutzuckermessung",
+      "serviceItem3": "Patientenbad",
+      "serviceItem4": "Wundversorgung",
+      "serviceItem5": "Individueller Pflegeplan",
+      "ctaTitle": "Möchten Sie Pflege vereinbaren?",
+      "ctaText": "Kontaktieren Sie uns oder konsultieren Sie Ihren Arzt.",
+      "ctaButton": "Kontaktieren Sie uns"
+    },
+    "physicalTherapy": {
+      "intro": "Physiotherapie zu Hause ermöglicht es Ihnen, sich in den eigenen vier Wänden zu erholen und neue Kraft zu schöpfen.",
+      "text": "Unser Team erfahrener Physiotherapeuten passt die Therapie Ihren individuellen Bedürfnissen an und verwendet moderne Techniken und Geräte. Unabhängig von Ihrem Zustand oder Ihrer Verletzung ist unser Ziel, Ihre Mobilität zu verbessern, Schmerzen zu lindern und Ihnen zu helfen, zu Ihren täglichen Aktivitäten zurückzukehren.",
+      "offerTitle": "Was Wir Bieten",
+      "offerItem1": "Individualisiertes Therapieprogramm",
+      "offerItem2": "Moderne Techniken und Geräte",
+      "offerItem3": "Verbesserung der Mobilität",
+      "offerItem4": "Schmerzlinderung",
+      "offerItem5": "Therapie in den eigenen vier Wänden",
+      "ctaTitle": "Bereit für den Therapiebeginn?",
+      "ctaText": "Kontaktieren Sie uns und vereinbaren Sie einen Termin.",
+      "ctaButton": "Kontaktieren Sie uns"
+    }
+  },
+  "footer": {
+    "rights": "© 2026 Ustanova za zdravstvenu njegu Eleonora. Alle Rechte vorbehalten."
+  }
+}
