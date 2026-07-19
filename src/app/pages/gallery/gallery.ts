@@ -1,4 +1,4 @@
-import { Component, HostListener } from '@angular/core';
+import { Component, HostListener, AfterViewInit } from '@angular/core';
 import { NgFor, NgIf } from '@angular/common';
 
 interface GalleryImage {
@@ -13,7 +13,7 @@ interface GalleryImage {
   templateUrl: './gallery.html',
   styleUrl: './gallery.scss'
 })
-export class Gallery {
+export class Gallery implements AfterViewInit {
   images: GalleryImage[] = [];
 
   selectedImage: GalleryImage | null = null;
