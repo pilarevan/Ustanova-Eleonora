@@ -1,5 +1,7 @@
-import { Component } from '@angular/core';
-import { RouterOutlet } from '@angular/router';
+import { Component, inject } from '@angular/core';
+import { Router, RouterOutlet, NavigationEnd } from '@angular/router';
+import { ViewportScroller } from '@angular/common';
+import { filter } from 'rxjs';
 import { Header } from './components/header/header';
 import { Footer } from './components/footer/footer';
 
@@ -10,4 +12,15 @@ import { Footer } from './components/footer/footer';
   templateUrl: './app.html',
   styleUrl: './app.scss'
 })
-export class App {}
+export class App {
+  constructor() {
+    const router = inject(Router);
+    const viewportScroller = inject(ViewportScroller);
+
+    router.events.pipe(
+      filter(event => event instanceof NavigationEnd)
+    ).subscribe(() => {
+      viewportScroller.scrollToPosition([0, 0]);
+    });
+  }
+}
