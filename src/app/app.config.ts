@@ -1,26 +1,29 @@
-import { APP_BASE_HREF } from '@angular/common';
-import { HttpClient } from '@angular/common/http';
 import { ApplicationConfig } from '@angular/core';
 import { provideRouter } from '@angular/router';
 import { provideHttpClient } from '@angular/common/http';
-import { TranslateLoader, provideTranslateService } from '@ngx-translate/core';
+import { provideTranslateService } from '@ngx-translate/core';
+import { provideTranslateHttpLoader } from '@ngx-translate/http-loader';
 
 import { routes } from './app.routes';
+
+function getInitialLang(): string {
+  try {
+    return localStorage.getItem('lang') || 'hr';
+  } catch {
+    return 'hr';
+  }
+}
 
 export const appConfig: ApplicationConfig = {
   providers: [
     provideRouter(routes),
     provideHttpClient(),
     provideTranslateService({
-      lang: localStorage.getItem('lang') || 'hr',
-      loader: {
-        provide: TranslateLoader,
-        useFactory: (http: HttpClient, baseHref: string) => ({
-          getTranslation: (lang: string) =>
-            http.get(`${baseHref}i18n/${lang}.json`)
-        }),
-        deps: [HttpClient, APP_BASE_HREF]
-      }
+      lang: getInitialLang()
+    }),
+    provideTranslateHttpLoader({
+      prefix: './i18n/',
+      suffix: '.json'
     })
   ]
 };
