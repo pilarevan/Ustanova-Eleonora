@@ -1,0 +1,12 @@
+<section class="news-preview section-light">
+  <div class="container">
+    <h2 class="news-preview__title">{{ 'news.title' | translate }}</h2>
+    <div class="news-preview__grid">
+      <article class="news-card" *ngFor="let item of news">
+        <div class="news-card__date">{{ item.date }}</div>
+        <h3 class="news-card__title">{{ item.title }}</h3>
+        <a [routerLink]="['/novosti', item.slug]" class="news-card__link">{{ 'news.readMore' | translate }} →</a>
+      </article>
+    </div>
+  </div>
+</section>

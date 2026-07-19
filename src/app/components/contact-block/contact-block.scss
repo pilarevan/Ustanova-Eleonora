@@ -1,0 +1,86 @@
+.contact {
+  padding: 5rem 0;
+
+  &__title {
+    font-size: clamp(2rem, 4vw, 3rem);
+    text-align: center;
+    margin-bottom: 3rem;
+  }
+
+  &__grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 2rem;
+    margin-bottom: 4rem;
+  }
+
+  &__item {
+    h3 {
+      font-size: 1.1rem;
+      color: var(--color-accent);
+      margin-bottom: 1rem;
+    }
+
+    p {
+      font-size: 0.9rem;
+      opacity: 0.9;
+      margin-bottom: 0.25rem;
+    }
+  }
+
+  &__hours {
+    font-size: 0.8rem !important;
+    opacity: 0.6 !important;
+    margin-bottom: 0.75rem !important;
+  }
+
+  &__addresses {
+    text-align: center;
+    margin-bottom: 2rem;
+    font-size: 0.95rem;
+    opacity: 0.8;
+    line-height: 1.8;
+  }
+
+  &__social {
+    text-align: center;
+    margin-bottom: 2rem;
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+
+    a {
+      color: var(--color-light);
+      font-weight: 700;
+      font-size: 0.9rem;
+      opacity: 0.7;
+      transition: opacity 0.2s;
+
+      &:hover {
+        opacity: 1;
+        color: var(--color-accent);
+      }
+    }
+  }
+
+  &__gdpr {
+    max-width: 700px;
+    margin: 0 auto;
+    font-size: 0.75rem;
+    opacity: 0.5;
+    text-align: center;
+    line-height: 1.6;
+  }
+}
+
+@media (max-width: 768px) {
+  .contact__grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (max-width: 480px) {
+  .contact__grid {
+    grid-template-columns: 1fr;
+  }
+}

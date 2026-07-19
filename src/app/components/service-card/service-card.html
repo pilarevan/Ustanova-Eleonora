@@ -1,0 +1,11 @@
+<article class="service-card" [style.--index]="index">
+  <div class="service-card__image-wrap">
+    <img [src]="imageUrl" [alt]="titleKey | translate" class="service-card__image">
+    <div class="service-card__overlay"></div>
+  </div>
+  <div class="service-card__body">
+    <h3 class="service-card__title">{{ titleKey | translate }}</h3>
+    <p class="service-card__desc">{{ descKey | translate }}</p>
+    <a [routerLink]="link" class="btn btn-outline">{{ 'services.transport.explore' | translate }}</a>
+  </div>
+</article>
