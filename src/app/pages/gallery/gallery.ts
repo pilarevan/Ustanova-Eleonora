@@ -1,5 +1,6 @@
 import { Component, HostListener, AfterViewInit } from '@angular/core';
 import { NgFor, NgIf } from '@angular/common';
+import { TranslatePipe } from '@ngx-translate/core';
 
 interface GalleryImage {
   id: number;
@@ -9,7 +10,7 @@ interface GalleryImage {
 @Component({
   standalone: true,
   selector: 'app-gallery',
-  imports: [NgFor, NgIf],
+  imports: [NgFor, NgIf, TranslatePipe],
   templateUrl: './gallery.html',
   styleUrl: './gallery.scss'
 })

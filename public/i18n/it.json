@@ -5,7 +5,12 @@
     "healthcare": "ASSISTENZA DOMICILIARE",
     "physiotherapy": "FISIOTERAPIA",
     "news": "NOTIZIE",
+    "gallery": "GALLERIA",
     "contact": "CONTATTI"
+  },
+  "gallery": {
+    "title": "Galleria",
+    "imageAlt": "Immagine galleria"
   },
   "months": {
     "1": "Gennaio",

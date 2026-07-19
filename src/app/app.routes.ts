@@ -26,6 +26,10 @@ export const routes: Routes = [
     loadComponent: () => import('./pages/article/article').then(m => m.Article)
   },
   {
+    path: 'galerija',
+    loadComponent: () => import('./pages/gallery/gallery').then(m => m.Gallery)
+  },
+  {
     path: '**',
     redirectTo: ''
   }

@@ -5,7 +5,12 @@
     "healthcare": "ZDRAVSTVENA NJEGA",
     "physiotherapy": "FIZIKALNA TERAPIJA",
     "news": "NOVOSTI",
+    "gallery": "GALERIJA",
     "contact": "KONTAKT"
+  },
+  "gallery": {
+    "title": "Galerija",
+    "imageAlt": "Galerija slika"
   },
   "months": {
     "1": "Siječanj",
