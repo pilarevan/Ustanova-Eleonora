@@ -1,0 +1,77 @@
+{
+  "nav": {
+    "about": "ÜBER UNS",
+    "transport": "KRANKENTRANSPORT",
+    "healthcare": "HAUSKRANKENPFLEGE",
+    "physiotherapy": "PHYSIOTHERAPIE",
+    "news": "NEUIGKEITEN",
+    "contact": "KONTAKT"
+  },
+  "hero": {
+    "tagline": "Medizinischer Transport durch Europa — mit Herz.",
+    "subtitle": "Professionelle Gesundheitsversorgung und Transport mit voller Aufmerksamkeit für Ihre Bedürfnisse.",
+    "cta": "Mehr erfahren"
+  },
+  "services": {
+    "transport": {
+      "title": "Krankentransport",
+      "description": "Patiententransport in Kroatien und Europa. 24/7, sicher und zuverlässig.",
+      "explore": "Entdecken →"
+    },
+    "healthcare": {
+      "title": "Hauskrankenpflege",
+      "description": "Qualitativ hochwertige Gesundheitsversorgung in Ihrem Zuhause. Unser Team widmet sich Ihrem Wohlbefinden.",
+      "explore": "Entdecken →"
+    },
+    "physiotherapy": {
+      "title": "Physiotherapie zu Hause",
+      "description": "Individuelle Physiotherapie zu Hause für schnellere Genesung und bessere Mobilität.",
+      "explore": "Entdecken →"
+    }
+  },
+  "stats": {
+    "years": "29+ Jahre Erfahrung",
+    "employees": "40+ Mitarbeiter",
+    "vehicles": "40+ Fahrzeuge",
+    "patients": "9000+ Patienten jährlich"
+  },
+  "news": {
+    "title": "Neuigkeiten",
+    "readMore": "Mehr lesen"
+  },
+  "contact": {
+    "title": "Kontakt",
+    "healthcare": {
+      "title": "Gesundheitspflege",
+      "hours": "Mo-Fr 07:00-15:00",
+      "phone": "00385 52 451221",
+      "email": "eleonora.nalozi@gmail.com"
+    },
+    "transport": {
+      "title": "Krankentransport",
+      "hours": "Täglich 0-24",
+      "phone": "00385 91 451 2211",
+      "email": "ustanova.eleonora@gmail.com"
+    },
+    "physiotherapy": {
+      "title": "Physiotherapie",
+      "hours": "Mo-Fr 07:00-15:00",
+      "phone": "00385 52 434 435",
+      "email": "eleonorafizikalna@gmail.com"
+    },
+    "accounting": {
+      "title": "Buchhaltung",
+      "hours": "Mo-Fr 07:00-15:00",
+      "phone": "00385 52 451 221",
+      "email": "racunovodstvo.eleonora@gmail.com"
+    },
+    "address": {
+      "line1": "Mauro Gioseffi 2, Poreč 52440",
+      "line2": "Antonci 25a, Nova Vas 52446"
+    },
+    "gdpr": "Die Ustanova za zdravstvenu njegu \"Eleonora\" hat alle Geschäftsbedingungen gemäß der neuen DSGVO-Verordnung angepasst. Wir sammeln und verarbeiten Daten wie Namen, Vornamen und andere Kontaktinformationen, die für die Erbringung unserer Dienstleistungen erforderlich sind. Bei weiteren Fragen kontaktieren Sie uns bitte."
+  },
+  "footer": {
+    "rights": "© 2026 Ustanova za zdravstvenu njegu Eleonora. Alle Rechte vorbehalten."
+  }
+}
