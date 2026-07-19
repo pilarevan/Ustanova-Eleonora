@@ -1,0 +1,33 @@
+<app-hero></app-hero>
+
+<section class="services section-dark">
+  <div class="container">
+    <div class="services__grid">
+      <app-service-card
+        titleKey="services.transport.title"
+        descKey="services.transport.description"
+        link="/sanitetski-prijevoz"
+        imageUrl="assets/images/service-transport.jpg"
+        [index]="0">
+      </app-service-card>
+      <app-service-card
+        titleKey="services.healthcare.title"
+        descKey="services.healthcare.description"
+        link="/zdravstvena-njega"
+        imageUrl="assets/images/service-healthcare.jpg"
+        [index]="1">
+      </app-service-card>
+      <app-service-card
+        titleKey="services.physiotherapy.title"
+        descKey="services.physiotherapy.description"
+        link="/fizikalna-terapija"
+        imageUrl="assets/images/service-physio.jpg"
+        [index]="2">
+      </app-service-card>
+    </div>
+  </div>
+</section>
+
+<app-stats></app-stats>
+<app-news-preview></app-news-preview>
+<app-contact-block></app-contact-block>
