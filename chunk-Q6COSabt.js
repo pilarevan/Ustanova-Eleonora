@@ -1,1 +1,0 @@
-import {g,h as yc,n as nr}from'./main-H3FR6EXK.js';var m=class e{translate=g(yc);transform(t){if(!t)return "";let[r,s,o]=t.split("-"),p=String(Number(s)),f=this.translate.instant(`months.${p}`);return `${Number(o)} ${f} ${r}`}static \u0275fac=function(r){return new(r||e)};static \u0275pipe=nr({name:"formatDate",type:e,pure:true})};export{m};
