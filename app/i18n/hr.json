@@ -44,25 +44,25 @@
     "healthcare": {
       "title": "Zdravstvena njega",
       "hours": "Pon-Pet 07:00-15:00",
-      "phone": "00385 52 451221",
+      "phone": "+385 52 451 221",
       "email": "eleonora.nalozi@gmail.com"
     },
     "transport": {
       "title": "Sanitetski prijevoz",
       "hours": "Svaki dan 0-24",
-      "phone": "00385 91 451 2211",
+      "phone": "+385 91 451 2211",
       "email": "ustanova.eleonora@gmail.com"
     },
     "physiotherapy": {
       "title": "Fizikalna terapija",
       "hours": "Pon-Pet 07:00-15:00",
-      "phone": "00385 52 434 435",
+      "phone": "+385 52 434 435",
       "email": "eleonorafizikalna@gmail.com"
     },
     "accounting": {
       "title": "Računovodstvo",
       "hours": "Pon-Pet 07:00-15:00",
-      "phone": "00385 52 451 221",
+      "phone": "+385 52 451 221",
       "email": "racunovodstvo.eleonora@gmail.com"
     },
     "address": {
