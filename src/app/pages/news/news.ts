@@ -2,6 +2,7 @@ import { Component } from '@angular/core';
 import { RouterModule } from '@angular/router';
 import { TranslatePipe } from '@ngx-translate/core';
 import { FormatDatePipe } from '../../pipes/format-date.pipe';
+import { ScrollRevealDirective } from '../../shared/scroll-reveal.directive';
 
 interface NewsItem {
   title: string;
@@ -13,7 +14,7 @@ interface NewsItem {
 @Component({
   standalone: true,
   selector: 'app-news',
-  imports: [RouterModule, TranslatePipe, FormatDatePipe],
+  imports: [RouterModule, TranslatePipe, FormatDatePipe, ScrollRevealDirective],
   templateUrl: './news.html',
   styleUrl: './news.scss'
 })

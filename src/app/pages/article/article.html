@@ -1,5 +1,5 @@
 <div class="article-page">
-  <section class="article-hero section-darker">
+  <section appScrollReveal class="article-hero section-darker scroll-reveal">
     <div class="container">
       <a routerLink="/novosti" class="article__back">← {{ 'news.title' | translate }}</a>
       @if (image) {
@@ -12,7 +12,7 @@
     </div>
   </section>
 
-  <section class="article-content section-light">
+  <section appScrollReveal class="article-content section-light scroll-reveal">
     <div class="container">
       <p style="opacity:0.5;font-style:italic">Article content loading...</p>
     </div>

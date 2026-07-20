@@ -2,6 +2,7 @@ import { Component } from '@angular/core';
 import { ActivatedRoute, RouterModule } from '@angular/router';
 import { TranslatePipe } from '@ngx-translate/core';
 import { FormatDatePipe } from '../../pipes/format-date.pipe';
+import { ScrollRevealDirective } from '../../shared/scroll-reveal.directive';
 
 interface ArticleData {
   title: string;
@@ -22,7 +23,7 @@ const articles: ArticleData[] = [
 @Component({
   standalone: true,
   selector: 'app-article',
-  imports: [RouterModule, TranslatePipe, FormatDatePipe],
+  imports: [RouterModule, TranslatePipe, FormatDatePipe, ScrollRevealDirective],
   templateUrl: './article.html',
   styleUrl: './article.scss'
 })

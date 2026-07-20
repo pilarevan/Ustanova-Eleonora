@@ -99,3 +99,65 @@ img {
   background: var(--color-light);
   color: var(--color-dark);
 }
+
+.scroll-reveal {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 0.6s ease, transform 0.6s ease;
+
+  &.revealed {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.scroll-reveal-left {
+  opacity: 0;
+  transform: translateX(-30px);
+  transition: opacity 0.6s ease, transform 0.6s ease;
+
+  &.revealed {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.scroll-reveal-right {
+  opacity: 0;
+  transform: translateX(30px);
+  transition: opacity 0.6s ease, transform 0.6s ease;
+
+  &.revealed {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.scroll-reveal-scale {
+  opacity: 0;
+  transform: scale(0.9);
+  transition: opacity 0.6s ease, transform 0.6s ease;
+
+  &.revealed {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+.scroll-reveal-stagger > * {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+.scroll-reveal-stagger.revealed > *:nth-child(1) { transition-delay: 0s; }
+.scroll-reveal-stagger.revealed > *:nth-child(2) { transition-delay: 0.1s; }
+.scroll-reveal-stagger.revealed > *:nth-child(3) { transition-delay: 0.2s; }
+.scroll-reveal-stagger.revealed > *:nth-child(4) { transition-delay: 0.3s; }
+.scroll-reveal-stagger.revealed > *:nth-child(5) { transition-delay: 0.4s; }
+.scroll-reveal-stagger.revealed > *:nth-child(6) { transition-delay: 0.5s; }
+
+.scroll-reveal-stagger.revealed > * {
+  opacity: 1;
+  transform: translateY(0);
+}
