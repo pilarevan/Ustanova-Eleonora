@@ -1,7 +1,6 @@
 import { Component, HostListener } from '@angular/core';
 import { NgFor, NgIf } from '@angular/common';
 import { TranslatePipe } from '@ngx-translate/core';
-import { ScrollRevealDirective } from '../../shared/scroll-reveal.directive';
 
 interface GalleryImage {
   id: number;
@@ -11,7 +10,7 @@ interface GalleryImage {
 @Component({
   standalone: true,
   selector: 'app-gallery',
-  imports: [NgFor, NgIf, TranslatePipe, ScrollRevealDirective],
+  imports: [NgFor, NgIf, TranslatePipe],
   templateUrl: './gallery.html',
   styleUrl: './gallery.scss'
 })

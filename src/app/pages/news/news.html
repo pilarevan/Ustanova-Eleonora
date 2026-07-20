@@ -1,11 +1,11 @@
 <div class="news-page">
-  <section appScrollReveal class="news-hero section-darker scroll-reveal">
+  <section class="news-hero section-darker">
     <div class="container">
       <h1>{{ 'news.title' | translate }}</h1>
     </div>
   </section>
 
-  <section appScrollReveal class="news-list section-light scroll-reveal">
+  <section class="news-list section-light">
     <div class="container">
       <div class="news-list__grid">
         @for (item of news; track item.slug) {
