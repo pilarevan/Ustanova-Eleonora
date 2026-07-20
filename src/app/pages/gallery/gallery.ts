@@ -21,10 +21,21 @@ export class Gallery {
 
   visibleIds = new Set<number>();
 
+  private pushImage(id: number) {
+    this.images.push({ id, src: `assets/images/gallery/gallery-${id}.jpg` });
+    this.visibleIds.add(id);
+  }
+
   constructor() {
-    for (let i = 1; i <= 53; i++) {
-      this.images.push({ id: i, src: `assets/images/gallery/gallery-${i}.jpg` });
-      this.visibleIds.add(i);
+    const verticals = [1,3,5,6,7,8,9,11,13,14,15,16,17,18,19,20,21,23,24,25,30,40,41,44,46,48,49,50,51];
+    const horizontals = [2,4,10,12,22,26,27,28,29,31,32,33,34,35,36,37,38,39,42,43,45,47,52,53];
+    let vi = 0, hi = 0, turn = true;
+    while (vi < verticals.length || hi < horizontals.length) {
+      if (turn && vi < verticals.length) this.pushImage(verticals[vi++]);
+      else if (!turn && hi < horizontals.length) this.pushImage(horizontals[hi++]);
+      else if (vi < verticals.length) this.pushImage(verticals[vi++]);
+      else this.pushImage(horizontals[hi++]);
+      turn = !turn;
     }
   }
 
