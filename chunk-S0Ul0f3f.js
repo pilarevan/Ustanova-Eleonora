@@ -1,0 +1,1 @@
+import {h as g,p as pc,k as tr}from'./main-KZGCK4B3.js';var m=class e{translate=g(pc);transform(t){if(!t)return "";let[r,s,o]=t.split("-"),p=String(Number(s)),f=this.translate.instant(`months.${p}`);return `${Number(o)} ${f} ${r}`}static \u0275fac=function(r){return new(r||e)};static \u0275pipe=tr({name:"formatDate",type:e,pure:true})};export{m};
