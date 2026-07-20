@@ -16,7 +16,7 @@ function getInitialLang(): string {
 
 export const appConfig: ApplicationConfig = {
   providers: [
-    provideRouter(routes, withInMemoryScrolling({ scrollPositionRestoration: 'enabled' })),
+    provideRouter(routes, withInMemoryScrolling({ scrollPositionRestoration: 'enabled', anchorScrolling: 'enabled' })),
     provideHttpClient(),
     provideTranslateService({
       lang: getInitialLang()
