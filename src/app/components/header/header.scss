@@ -65,6 +65,10 @@
     }
   }
 
+  &__nav-close {
+    display: none;
+  }
+
   &__hamburger {
     display: none;
     flex-direction: column;
@@ -97,6 +101,18 @@
       padding: 5rem 2rem;
       transition: right 0.3s;
       gap: 1.5rem;
+
+      &-close {
+        position: absolute;
+        top: 1rem;
+        right: 1rem;
+        background: none;
+        border: none;
+        color: var(--color-light);
+        font-size: 2rem;
+        cursor: pointer;
+        line-height: 1;
+      }
 
       &.open {
         right: 0;

@@ -5,13 +5,14 @@
     </a>
 
     <nav class="header__nav" [class.open]="menuOpen">
-      <a routerLink="/" routerLinkActive="active" [routerLinkActiveOptions]="{exact:true}">{{ 'nav.about' | translate }}</a>
-      <a routerLink="/sanitetski-prijevoz" routerLinkActive="active">{{ 'nav.transport' | translate }}</a>
-      <a routerLink="/zdravstvena-njega" routerLinkActive="active">{{ 'nav.healthcare' | translate }}</a>
-      <a routerLink="/fizikalna-terapija" routerLinkActive="active">{{ 'nav.physiotherapy' | translate }}</a>
-      <a routerLink="/novosti" routerLinkActive="active">{{ 'nav.news' | translate }}</a>
-      <a routerLink="/galerija" routerLinkActive="active">{{ 'nav.gallery' | translate }}</a>
-      <a routerLink="/" fragment="contact">{{ 'nav.contact' | translate }}</a>
+      <button class="header__nav-close" (click)="closeMenu()" aria-label="Close menu">×</button>
+      <a routerLink="/" routerLinkActive="active" [routerLinkActiveOptions]="{exact:true}" (click)="closeMenu()">{{ 'nav.about' | translate }}</a>
+      <a routerLink="/sanitetski-prijevoz" routerLinkActive="active" (click)="closeMenu()">{{ 'nav.transport' | translate }}</a>
+      <a routerLink="/zdravstvena-njega" routerLinkActive="active" (click)="closeMenu()">{{ 'nav.healthcare' | translate }}</a>
+      <a routerLink="/fizikalna-terapija" routerLinkActive="active" (click)="closeMenu()">{{ 'nav.physiotherapy' | translate }}</a>
+      <a routerLink="/novosti" routerLinkActive="active" (click)="closeMenu()">{{ 'nav.news' | translate }}</a>
+      <a routerLink="/galerija" routerLinkActive="active" (click)="closeMenu()">{{ 'nav.gallery' | translate }}</a>
+      <a routerLink="/" fragment="contact" (click)="closeMenu()">{{ 'nav.contact' | translate }}</a>
 
       <div class="header__lang">
         @for (lang of languages; track lang) {
