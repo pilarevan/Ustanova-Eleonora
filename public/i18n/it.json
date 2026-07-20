@@ -63,25 +63,25 @@
     "healthcare": {
       "title": "Assistenza Sanitaria",
       "hours": "Lun-Ven 07:00-15:00",
-      "phone": "00385 52 451221",
+      "phone": "+385 52 451 221",
       "email": "eleonora.nalozi@gmail.com"
     },
     "transport": {
       "title": "Trasporto Sanitario",
       "hours": "Ogni giorno 0-24",
-      "phone": "00385 91 451 2211",
+      "phone": "+385 91 451 2211",
       "email": "ustanova.eleonora@gmail.com"
     },
     "physiotherapy": {
       "title": "Fisioterapia",
       "hours": "Lun-Ven 07:00-15:00",
-      "phone": "00385 52 434 435",
+      "phone": "+385 52 434 435",
       "email": "eleonorafizikalna@gmail.com"
     },
     "accounting": {
       "title": "Contabilità",
       "hours": "Lun-Ven 07:00-15:00",
-      "phone": "00385 52 451 221",
+      "phone": "+385 52 451 221",
       "email": "racunovodstvo.eleonora@gmail.com"
     },
     "address": {
