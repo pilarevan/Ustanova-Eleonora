@@ -14,9 +14,8 @@
   padding: 3rem 0 5rem;
 
   &__inner {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 1rem;
+    column-count: 3;
+    column-gap: 1rem;
   }
 }
 
@@ -25,6 +24,8 @@
   opacity: 0;
   transform: translateY(20px);
   transition: opacity 0.5s ease, transform 0.5s ease;
+  break-inside: avoid;
+  margin-bottom: 1rem;
 
   &.is-visible {
     opacity: 1;
@@ -76,12 +77,12 @@
 
 @media (max-width: 768px) {
   .gallery-grid__inner {
-    grid-template-columns: repeat(2, 1fr);
+    column-count: 2;
   }
 }
 
 @media (max-width: 480px) {
   .gallery-grid__inner {
-    grid-template-columns: 1fr;
+    column-count: 1;
   }
 }
