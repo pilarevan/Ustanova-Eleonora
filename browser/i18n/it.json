@@ -5,7 +5,26 @@
     "healthcare": "ASSISTENZA DOMICILIARE",
     "physiotherapy": "FISIOTERAPIA",
     "news": "NOTIZIE",
+    "gallery": "GALLERIA",
     "contact": "CONTATTI"
+  },
+  "gallery": {
+    "title": "Galleria",
+    "imageAlt": "Immagine galleria"
+  },
+  "months": {
+    "1": "Gennaio",
+    "2": "Febbraio",
+    "3": "Marzo",
+    "4": "Aprile",
+    "5": "Maggio",
+    "6": "Giugno",
+    "7": "Luglio",
+    "8": "Agosto",
+    "9": "Settembre",
+    "10": "Ottobre",
+    "11": "Novembre",
+    "12": "Dicembre"
   },
   "hero": {
     "tagline": "Trasporto medico in tutta Europa — con il cuore.",
@@ -30,7 +49,7 @@
     }
   },
   "stats": {
-    "years": "29+ anni di esperienza",
+    "years": "30 anni di esperienza",
     "employees": "40+ dipendenti",
     "vehicles": "40+ veicoli",
     "patients": "9000+ pazienti all'anno"
