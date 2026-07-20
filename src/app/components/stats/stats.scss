@@ -1,5 +1,6 @@
 .stats {
   padding: 5rem 0;
+  position: relative;
 
   &__grid {
     display: grid;
@@ -21,13 +22,15 @@
     font-size: clamp(3rem, 5vw, 5rem);
     color: var(--color-accent);
     line-height: 1;
+    letter-spacing: -0.02em;
   }
 
   &__label {
     font-size: 0.9rem;
-    opacity: 0.8;
+    opacity: 0.75;
     text-transform: uppercase;
-    letter-spacing: 0.05em;
+    letter-spacing: 0.08em;
+    font-weight: 500;
   }
 }
 

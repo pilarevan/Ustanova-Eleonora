@@ -6,7 +6,7 @@
   z-index: 1000;
   padding: 1rem 0;
   transition: all 0.3s;
-  background: var(--color-dark);
+  background: var(--color-primary);
 
   &.scrolled {
     box-shadow: 0 2px 20px rgba(0,0,0,0.3);
@@ -100,7 +100,7 @@
       right: -100%;
       width: 280px;
       height: 100vh;
-      background: var(--color-darker);
+      background: var(--color-primary-light);
       flex-direction: column;
       padding: 5rem 2rem;
       transition: right 0.3s;

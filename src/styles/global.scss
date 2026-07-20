@@ -1,14 +1,19 @@
 :root {
-  --color-dark: #1a1a2e;
-  --color-darker: #16213e;
-  --color-accent: #0D9488;
-  --color-accent-hover: #0f766e;
-  --color-light: #ffffff;
-  --color-gray: #e2e8f0;
-  --color-text: #1a1a2e;
-  --color-text-light: #64748b;
-  --font-heading: 'Inter', sans-serif;
-  --font-body: system-ui, -apple-system, sans-serif;
+  --color-primary: #0F172A;
+  --color-primary-light: #1E293B;
+  --color-secondary: #334155;
+  --color-accent: #0369A1;
+  --color-accent-hover: #0284C7;
+  --color-light: #FFFFFF;
+  --color-background: #F8FAFC;
+  --color-foreground: #020617;
+  --color-muted: #E8ECF1;
+  --color-border: #E2E8F0;
+  --color-text-light: #64748B;
+  --color-destructive: #DC2626;
+
+  --font-heading: 'Figtree', sans-serif;
+  --font-body: 'Noto Sans', sans-serif;
 }
 
 *, *::before, *::after {
@@ -51,18 +56,18 @@ img {
 }
 
 .section-dark {
-  background: var(--color-dark);
+  background: var(--color-primary);
   color: var(--color-light);
 }
 
 .section-darker {
-  background: var(--color-darker);
+  background: var(--color-primary-light);
   color: var(--color-light);
 }
 
 .section-light {
-  background: var(--color-light);
-  color: var(--color-text);
+  background: var(--color-background);
+  color: var(--color-foreground);
 }
 
 .btn {
@@ -70,13 +75,13 @@ img {
   align-items: center;
   gap: 0.5rem;
   font-family: var(--font-heading);
-  font-weight: 700;
+  font-weight: 600;
   font-size: 1rem;
   padding: 0.75rem 2rem;
   border: none;
-  border-radius: 0;
+  border-radius: 6px;
   cursor: pointer;
-  transition: all 0.2s;
+  transition: all 0.25s ease;
 }
 
 .btn-primary {
@@ -86,18 +91,20 @@ img {
 
 .btn-primary:hover {
   background: var(--color-accent-hover);
-  transform: translateY(-2px);
+  transform: translateY(-1px);
+  box-shadow: 0 4px 12px rgba(3, 105, 161, 0.3);
 }
 
 .btn-outline {
   background: transparent;
   color: var(--color-light);
   border: 2px solid var(--color-light);
+  border-radius: 6px;
 }
 
 .btn-outline:hover {
   background: var(--color-light);
-  color: var(--color-dark);
+  color: var(--color-primary);
 }
 
 .scroll-reveal {

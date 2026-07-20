@@ -6,7 +6,8 @@
     "start": "ng serve",
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
-    "test": "ng test"
+    "test": "ng test",
+    "deploy": "ng build --base-href /Ustanova-Eleonora/ && npx gh-pages -d dist/ustanova-eleonora/browser"
   },
   "private": true,
   "packageManager": "npm@11.16.0",
