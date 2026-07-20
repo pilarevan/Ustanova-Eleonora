@@ -111,6 +111,16 @@ img {
   }
 }
 
+@media (prefers-reduced-motion: reduce) {
+  .scroll-reveal,
+  .scroll-reveal-left,
+  .scroll-reveal-right,
+  .scroll-reveal-scale {
+    opacity: 1;
+    transform: none;
+  }
+}
+
 .scroll-reveal-left {
   opacity: 0;
   transform: translateX(-30px);
