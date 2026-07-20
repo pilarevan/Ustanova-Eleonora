@@ -1,17 +1,22 @@
-# Task 4 Report
+# Task 4 Report: Build production, deploy, push
 
-**Status:** DONE
+## Build Result
+- **Status:** PASS
+- Build completed successfully in 2.199s
+- Output: `dist/ustanova-eleonora/browser`
+- Warning: Dart Sass `@import` deprecation (non-blocking)
 
-## Commits Created
-- `8ad5fdc` feat: use ISO dates and FormatDatePipe for translated month names
+## Deploy Result
+- **Status:** Published
+- Pages branch updated with galerija page
 
-## Files Modified
-- `src/app/pages/news/news.ts` — ISO dates + FormatDatePipe import
-- `src/app/pages/news/news.html` — `| formatDate` pipe
-- `src/app/pages/article/article.ts` — ISO dates + FormatDatePipe import
-- `src/app/pages/article/article.html` — `| formatDate` pipe
-- `src/app/components/news-preview/news-preview.ts` — ISO dates + FormatDatePipe import
-- `src/app/components/news-preview/news-preview.html` — `| formatDate` pipe
+## Push Result
+- **Status:** Pushed
+- `19fb4db..9bf00a2  main -> main`
 
-## Build Test
-`npx ng build` — succeeded (only pre-existing Sass `@import` deprecation warning)
+## Summary
+All steps completed successfully:
+1. ✅ Production build (--configuration production, --base-href=/Ustanova-Eleonora/)
+2. ✅ Copied index.html → 404.html
+3. ✅ Deployed to gh-pages ("Published")
+4. ✅ Pushed source to origin/main

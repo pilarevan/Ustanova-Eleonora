@@ -5,7 +5,6 @@
     </a>
 
     <nav class="header__nav" [class.open]="menuOpen">
-      <button class="header__nav-close" (click)="closeMenu()" aria-label="Close menu">×</button>
       <a routerLink="/" routerLinkActive="active" [routerLinkActiveOptions]="{exact:true}" (click)="closeMenu()">{{ 'nav.about' | translate }}</a>
       <a routerLink="/sanitetski-prijevoz" routerLinkActive="active" (click)="closeMenu()">{{ 'nav.transport' | translate }}</a>
       <a routerLink="/zdravstvena-njega" routerLinkActive="active" (click)="closeMenu()">{{ 'nav.healthcare' | translate }}</a>
